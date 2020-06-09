@@ -1,0 +1,54 @@
+/* Reset all */
+* { margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.game {
+    position: relative;
+    min-height: 512px;
+    min-width: 512px;
+}
+
+.background {
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.bouton {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    z-index: 10;
+}
+
+.vert {
+    top: 0;
+    left: 0;
+}
+
+.rouge {
+    top: 0;
+    right: 0;
+}
+
+.bleu {
+    bottom: 0;
+    right: 0;
+}
+
+.jaune {
+    bottom: 0;
+    left: 0;
+}
