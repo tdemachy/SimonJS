@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <script src ="js/main.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <title>Jeu Simon</title>
     </head>
@@ -9,19 +10,22 @@
         <div class="container">
             <div class="game background">
                 <div class = "bouton vert">
-                    <img class = "bouton_image" id ="bouton_vert" src="assets/vert_off.png">
+                    <img class = "bouton_image" id ="vert" onclick="buttonClicked(this)" src="assets/vert_off.png">
                 </div>
                 <div class = "bouton rouge">
-                    <img class = "bouton_image" id ="bouton_rouge" src="assets/rouge_off.png">
+                    <img class = "bouton_image" id ="rouge" onclick="buttonClicked(this)" src="assets/rouge_off.png">
                 </div>
                 <div class = "bouton jaune">
-                    <img class = "bouton_image" id ="bouton_jaune" src="assets/jaune_off.png">
+                    <img class = "bouton_image" id ="jaune" onclick="buttonClicked(this)" src="assets/jaune_off.png">
                 </div>
                 <div class = "bouton bleu">
-                    <img class = "bouton_image" id ="bouton_bleu" src="assets/bleu_off.png">
+                    <img class = "bouton_image" id ="bleu" onclick="buttonClicked(this)" src="assets/bleu_off.png">
                 </div>
             </div>
-    
         </div>
     </body>
+
+    <audio id="sound_vert">
+        <source src ="assets/sounds/simonSound1.mp3">
+    </audio> 
 </html>
